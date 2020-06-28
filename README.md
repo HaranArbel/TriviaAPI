@@ -212,7 +212,7 @@ To start and run the app please do the following:
 ### General:
 - Returns a filtered list of questions plus new question, a success message, the total number of questions, and the new question id.
 - Results are paginated
-- Sample: curl -X POST http://127.0.0.1:5000/questions/add -H "Content-Type: application/json" -d '{"question": "What was the title of the 1990 fantasy directed by Tim Burton about a young man with multi-bladed appendages?", "answer": "Edward Scissorhands", "difficulty": 3, "category": 5}'
+- Sample: curl -X POST http://127.0.0.1:5000/questions/add -H "Content-Type: application/json" -d '{"question": "La Giaconda is better known as what?", "answer": "Mona Lisa", "difficulty": 3, "category": 2}'
 ```json
 {
   "created": 195,
@@ -322,25 +322,20 @@ To start and run the app please do the following:
 }
 ```
     
-### POST '/quizzes'
+### POST '/play'
 ### General:
 - Returns a random question from the selected category, a success message, and the id of the category
-- Sample: curl -X POST http://localhost:5000/quizzes -H "Content-Type: application/json" -d '{ "previous_questions": [], "quiz_category": {"type": "Sports", "id": 5 }}'
+- Sample: curl -X POST http://localhost:5000/quizzes -H "Content-Type: application/json" -d '{ "previous_questions": [], "quiz_category": {"type": "Art", "id": 17 }}'
 ```json
 {
-  "category": 7,
+  "category": 2,
   "question": {
-    "answer": "Uruguay",
-    "category": 6,
-    "difficulty": 4,
-    "id": 11,
-    "question": "Which country won the first ever soccer World Cup in 1930?"
+    "answer": "Mona Lisa",
+    "category": 2,
+    "difficulty": 3,
+    "id": 17,
+    "question": "La Giaconda is better known as what?"
   },
   "success": true
 }
 ```
-
-
-
-## Source
-This repository has been downloaded and locally worked on from [Udacity](https://github.com/udacity/FSND/tree/master/projects/02_trivia_api/starter). 
