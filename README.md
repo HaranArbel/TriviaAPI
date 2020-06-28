@@ -27,6 +27,9 @@ The `./backend` directory contains a Flask and SQLAlchemy server. Endpoints have
 ### Frontend
 The `./frontend` directory contains a complete React frontend to consume the data from the Flask server.
 
+* Base URL: At present this app can only run locally and is not hosted as a base URL. The backened app is hosted at the default, http://127.0.0.1:5000, which is set as a proxy in the fronted configuration.
+* Authentication: This version of the application does not require authentication or API keys.
+
 ## Development Setup
 To start and run the app please do the following:
 
