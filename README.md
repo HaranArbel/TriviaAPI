@@ -342,3 +342,23 @@ To start and run the app please do the following:
   "success": true
 }
 ```
+
+### Error Handling
+Errors are returned as JSON objects in the following format:
+
+```json
+{
+  "success": False,
+  "error": 404,
+  "message": "bad request"
+}
+```
+
+The API will return four error types when requests fail:
+
+* 400: Bad Request
+* 404: Resource Not Found
+* 405: Method Not Allowed
+* 422: Not Processable
+
+
