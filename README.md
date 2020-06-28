@@ -12,10 +12,10 @@ This is a trivia application where you can play a trivia game. The application i
 
 ## About the Stack
 
-**SQLAlchemy ORM** to be our ORM library of choice
-**PostgreSQL** as our database of choice
-**Python3 and Flask** as our server language and server framework
-**React.js** for our website's frontend
+* **SQLAlchemy ORM** to be our ORM library of choice
+* **PostgreSQL** as our database of choice
+* **Python3 and Flask** as our server language and server framework
+* **React.js** for our website's frontend
 
 
 ## Project Structure
