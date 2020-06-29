@@ -249,13 +249,12 @@ def create_app(test_config=None):
 
       question = None
       if questions:
-        question = random.choice(questions)
+        question = random.choice(questions).format()
 
-      if question:
-        return jsonify({
-          'success': True,
-          'question': question.format()
-        })
+      return jsonify({
+        'success': True,
+        'question': question
+      })
       # else:
 
 
